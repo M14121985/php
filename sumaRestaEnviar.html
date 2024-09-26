@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>suma resta</title>
+
+</head>
+
+<body>
+<div class="envio formulario">
+    <form method="post" action="sumarestaRecibir.php">
+        <input type="hidden" name="operacion" id="operacion">
+        </br>
+        <span class="formulario">ingrese el primer numero:</span>
+        <br>
+        <input type="text" name="numero1" id="numero1">
+        <br>
+        <br>
+        <span class="formulario">ingrese el segundo numero:</span>
+        <br>
+        <input type="text" name="numero2" id="numero2">
+        <br>
+        <br>
+        <input type="submit" value="sumar" onclick="document.getElementById('operacion').value = 'sumar';">
+        <input type="submit" value="restar" onclick="document.getElementById('operacion').value = 'restar';">
+    </form>
+</div>
+
+</body>
+</html>
